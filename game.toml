@@ -1,0 +1,53 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Gran Turismo"
+id = "SCUS-94194"
+players = 2
+exe = "disc/SCUS_941.94"
+disc = ""
+load_address = "0x80010000"
+entry_pc = "0x800317B8"
+text_size = "0x00022000"
+stack_base = "0x00000000"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Gran Turismo (USA) (Rev 1).bin"
+cue_name = "Gran Turismo (USA) (Rev 1).cue"
+boot_exe = "SCUS_941.94"
+known_sizes = [693668304]
+known_md5 = [
+  "a8ce602f3a846adbbfae7770cd33afab",
+]
+known_sha1 = [
+  "5433c55806f7cd5ca2e42a6c39ff816d442ed6b6",
+]
+known_crc32 = [
+  "2b3845aa",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "Gran Turismo Recompiled"
+memcard_dir = "saves"
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "9a911bcb39325ae4a67e60bb773c9ad0d2ea4edec22bf40c1c50cb3fcc407ba6"
