@@ -22,6 +22,13 @@ Experimental decompilation and function overrides remain outside this source.
 They can enter stable source only after equivalence, deterministic fallback,
 and removal or acceptance gates pass.
 
+## Package source gates
+
+The release workflow rejects a mismatch between the build, package, and
+deferred-relaunch executable names. The package wrapper treats
+`launcher_assets` as optional and stages it only when the clean source
+contains a package asset.
+
 ## Next gate
 
 Build the setup host from a clean checkout. Package the exact source-only ZIP.
