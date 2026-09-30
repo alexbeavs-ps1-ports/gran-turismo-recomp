@@ -1,32 +1,27 @@
 [project]
 title = "Gran Turismo"
-slug = "gran-turismo-recomp"
-region = "USA NTSC-U Rev 1"
-track = "stable recompilation setup host"
-intended_audience = "private manual-test preparation"
-commercial_use_possible = false
+region = "USA"
+track = "recompilation"
+status = "source_prepared_unqualified"
 
 [retail_identity]
 disc_count = 1
 serials = ["SCUS-94194"]
-boot_executables = ["SCUS_941.94"]
-boot_exe_sha256 = ["92ed13cea4096bc1eacfe26a20b3e6d6f22dc5ae909f13da75d9eda46949691b"]
-load_addresses = ["0x80010000"]
-entry_points = ["0x800317B8"]
+executable_paths = ["SCUS_941.94"]
+executable_sha256 = "92ed13cea4096bc1eacfe26a20b3e6d6f22dc5ae909f13da75d9eda46949691b"
+load_address = "0x80010000"
+entry_point = "0x800317B8"
+
+[bios]
+profile = "SCPH1001"
+sha256 = "71af94d1e47a68c11e8fdb9f8368040601514a42a5a399cda48c7d3bff1e99d3"
 
 [framework]
-repository = "https://github.com/Alexbeav/psxrecomp.git"
-branch = "codex/bench-upgrade-v2"
-commit = "8b4e090059602de76337c109ec6dd3a95c5d6c83"
-recomp_ui_commit = "4eda65430a431e5685ae0c515ebcd912c7843bff"
-license = "PolyForm Noncommercial 1.0.0"
+name = "psxrecomp"
+qualification = "pending T168 and shared canaries"
+template_commit = "f4751d005ee69b26a69f8fe0d7a58807f16b46c1"
 
-[preparation]
-state = "source_only_private_candidate_boot_program"
-release_version = "unassigned"
-publication = "not_authorized"
-retcomm_submission = "not_authorized"
-
-[limits]
-maximum_local_generated_gib = 20
-maximum_single_trace_gib = 8
+[release]
+target_version = "v0.4.0"
+private_only = true
+profile_status = "CI training pending"

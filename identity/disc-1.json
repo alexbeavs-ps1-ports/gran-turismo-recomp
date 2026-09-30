@@ -1,0 +1,31 @@
+{
+  "cue_path": "disc/Gran Turismo (USA) (Rev 1).cue",
+  "cue_name": "Gran Turismo (USA) (Rev 1).cue",
+  "bin_name": "Gran Turismo (USA) (Rev 1).bin",
+  "track_count": 1,
+  "data_track_size": 693668304,
+  "data_track_md5": "a8ce602f3a846adbbfae7770cd33afab",
+  "data_track_sha1": "5433c55806f7cd5ca2e42a6c39ff816d442ed6b6",
+  "data_track_crc32": "2b3845aa",
+  "boot_exe": "SCUS_941.94",
+  "serial": "SCUS-94194",
+  "serial_exe": "SCUS_941.94",
+  "volume_id": "GRAN_TURISMO",
+  "display_name": "Gran Turismo",
+  "load_address": "0x80010000",
+  "entry_pc": "0x800317B8",
+  "text_size": "0x00022000",
+  "stack_base": "0x00000000",
+  "require_cue": true,
+  "required_disc_fp": "9a911bcb39325ae4a67e60bb773c9ad0d2ea4edec22bf40c1c50cb3fcc407ba6",
+  "boot_exe_sha256": "92ed13cea4096bc1eacfe26a20b3e6d6f22dc5ae909f13da75d9eda46949691b",
+  "seed_count": 25,
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
