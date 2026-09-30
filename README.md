@@ -100,3 +100,7 @@ in release CI.
   <a href="https://discord.gg/Ad9BwSzctP"><img src=".github/raid-discord.png" alt="Join the Retro AI Development (R.A.I.D.) Discord" width="200"></a>
 </p>
 <!-- /retcomm-readme-raid -->
+
+<!-- framework-pin -->
+**Framework:** `psxrecomp` and `recomp-ui` are submodules pinned to test pin F (psxrecomp `a3e5fd892`, recomp-ui `8cf5b08`). Re-point both to pin G at release (PS1B-275). CI: Woodpecker, manual runs (`.woodpecker/`).
+<!-- /framework-pin -->
