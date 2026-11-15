@@ -1,0 +1,18 @@
+{
+  "disc_count": 1,
+  "verdict": "single",
+  "differing_program_fields": [],
+  "warnings": [],
+  "discs": [
+    {
+      "index": 1,
+      "cue_name": "Gran Turismo (USA) (Rev 1).cue",
+      "cue_path": "disc/Gran Turismo (USA) (Rev 1).cue",
+      "serial": "SCUS-94194",
+      "boot_exe": "SCUS_941.94",
+      "entry_pc": "0x800317B8",
+      "track_count": 1,
+      "required_disc_fp": "9a911bcb39325ae4a67e60bb773c9ad0d2ea4edec22bf40c1c50cb3fcc407ba6"
+    }
+  ]
+}
